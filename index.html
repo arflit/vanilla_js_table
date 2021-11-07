@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <title>table</title>
+</head>
+<body>
+  <header>
+    <h1>table</h1>
+  </header>
+  <main>
+    <button type="button" class="add-row">add row</button>
+    <table class="table" rules="all">
+    </table>
+  </main>
+  <template id="row">
+    <tr class="row">
+      <td class="row-header">
+        <button type="button" class="add-cell">add cell</button>
+        <select>
+          <option class="option red">red</option>
+          <option class="option green">green</option>
+          <option class="option blue">blue</option>
+        </select>
+      </td>
+    </tr>
+  </template>
+  <template id="cell">
+      <td class="cell red">
+        <select>
+          <option selected class="option red">red</option>
+          <option class="option green">green</option>
+          <option class="option blue">blue</option>
+        </select>
+      </td>
+  </template>
+  <script src="./index.js"></script>
+</body>
+</html>
