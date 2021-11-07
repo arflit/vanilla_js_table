@@ -5,7 +5,7 @@ const cellTemplate = document.querySelector('#cell').content; // шаблон я
 
 const addRow = () => {
   const row = rowTemplate.querySelector('.row').cloneNode(true); // копируем из шаблона строку
-  table.append(row); // добавляем её в конец страницы
+  table.append(row); // добавляем её в конец таблицы
 };
 
 addRowButton.addEventListener('click', addRow); // добавляем на кнопку "добавить ряд" слушатель событий
